@@ -57,7 +57,7 @@ Description: An open-concept living area and kitchen with floor to ceiling windo
 
 Show the images in ./img/inside in pleasing way. Clicking enlarges them. Show them in this order: living room, library, dining area, kitchen, play room, main floor bathroom, hallway, upper bedroom 2, upper bedroom 3, upper bathroom, upper bedroom 1, garage, gym, secondary suite bedroom, secondary suite living room, secondary suite bathroom, secondary suite kitchen
 
-## Around the House
+## Outside
 
 Show the images in ./img/outside in pleasing way, starting with overview.jpg. Clicking enlarges them.
 
