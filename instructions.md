@@ -20,7 +20,7 @@ The website should have the following sections:
 
 Just one large image (img/hero.jpg), filing the entire width of the screen. Make the image sizing/cropping behave similarly as the style inspiration website.
 
-In the lower right corner, show "4440 Marion Road" as a title overlaid, with an asking price of $4,199,000 underneath as a subtitle. Above that, say: "a private west coast retreat".
+In the lower right corner, show "4440 Marion Road" as a title overlaid, with an asking price of $3,990,000 underneath as a subtitle. Above that, say: "a private west coast retreat".
 
 ## Video
 
