@@ -6,11 +6,13 @@ For style inspiration, use the website at https://www.relahq.com/demo/mode
 
 Use web-safe serif fonts.
 
-Do not use JavaScript. Generate a single preview.html in this root directory, and a css file in ./css/style.css for styling. Make sure the website looks good on desktop, tablets, and mobile devices (i.e., make sure it's responsive).
+Generate a single preview.html in this root directory, and a css file in ./css/style.css for styling. Make sure the website looks good on desktop, tablets, and mobile devices (i.e., make sure it's responsive). Make sure the website works with JavaScript disabled (including lightbox fullscreen zoom for images).
 
-Start from scratch every time, do not reuse existing index.html or style.css. Just overwrite them if they exist from previous runs.
+If (and only if) JavaScript is available, add subtle left and right triangle arrows on each picture when zoomed, and have it go to the previous or next picture. Wrap around at the start and end. Also make sure the arrow keys work for going through the previous and next picture, and the escape key exits the zoom.
 
 Do not number the sections, and do not invent your own subcaptions to the section titles.
+
+If there's an existing preview.html and style.css, use those to build off of (basically just updating it with corrections from this updated instructions.md file).
 
 # Website sections:
 
@@ -20,7 +22,7 @@ The website should have the following sections:
 
 Just one large image (img/hero.jpg), filing the entire width of the screen. Make the image sizing/cropping behave similarly as the style inspiration website.
 
-In the lower right corner, show "4440 Marion Road" as a title overlaid, with an asking price of $4,199,000 underneath as a subtitle. Above that, say: "a private west coast retreat".
+In the lower right corner, show "4440 Marion Road" as a title overlaid, with an asking price of $3,990,000 underneath as a subtitle. Above that, say: "a private west coast retreat".
 
 ## Video
 
@@ -77,11 +79,11 @@ Embed https://my.matterport.com/show/?m=BU3Tge4Ar7b
 
 ## Location
 
-Description: Your own secluded oasis tucked away in the woods, where the Varley Trail begins, and Rice Lake around the corner. Just 5 minutes from Lynn Shopping Centre, and 30 minutes from downtown.
+Description: Your own secluded oasis tucked away in the woods, where the Varley Trail begins, and Rice Lake around the corner. Just 5 minutes from Lynn Shopping Centre, and 25 minutes from downtown.
 
 Embed a Google map pointing at 4440 Marion Road
 
-## Details
+## Contact
 
-Email contact@jaapsuter.com for more information. To book a showing, visit Bode.
+Email contact@jaapsuter.com for more information. To book a showing, view the Bode listing. (https://bode.ca/listings/19180470, make it open in a new tab)
 

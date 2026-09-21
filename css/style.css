@@ -74,8 +74,7 @@ a {
   text-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.35);
 }
 
-.hero-copy p,
-.eyebrow {
+.hero-copy p {
   margin: 0 0 1rem;
   font-size: 0.67rem;
   font-weight: 600;
@@ -85,7 +84,6 @@ a {
 
 .hero h1,
 .section-heading h2,
-.story h2,
 .contact h2 {
   margin: 0;
   font-weight: 400;
@@ -121,15 +119,6 @@ a {
 .section-heading {
   width: min(100%, 96rem);
   margin: 0 auto clamp(3rem, 6vw, 5rem);
-}
-
-.section-heading .eyebrow {
-  color: #6c796e;
-}
-
-.light-heading .eyebrow,
-.dark .section-heading .eyebrow {
-  color: var(--sage);
 }
 
 .section-heading h2 {
@@ -234,7 +223,6 @@ a {
   max-width: 58rem;
   margin: 0;
   font-size: clamp(1.4rem, 2.7vw, 2.5rem);
-  font-weight: 400;
   line-height: 1.4;
   text-align: center;
 }
@@ -285,7 +273,8 @@ a {
   transform: scale(1.025);
 }
 
-.photo > span {
+.photo > span,
+.lightbox-nav {
   display: none;
 }
 
@@ -329,6 +318,39 @@ a {
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+}
+
+.js .photo-toggle:checked + .photo > .lightbox-nav {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  display: grid;
+  width: 3rem;
+  height: 5rem;
+  padding: 0;
+  border: 0;
+  color: rgba(255, 255, 255, 0.72);
+  background: transparent;
+  font: 1.15rem/1 Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+  place-items: center;
+  transform: translateY(-50%);
+  transition: color 180ms ease, background 180ms ease;
+}
+
+.js .photo-toggle:checked + .photo > .lightbox-nav:hover,
+.js .photo-toggle:checked + .photo > .lightbox-nav:focus-visible {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+}
+
+.lightbox-prev {
+  left: clamp(0.15rem, 1.5vw, 1.5rem);
+}
+
+.lightbox-next {
+  right: clamp(0.15rem, 1.5vw, 1.5rem);
 }
 
 .overview-grid {
@@ -447,7 +469,7 @@ a {
   font-size: clamp(3.2rem, 7vw, 7rem);
 }
 
-.contact-copy > p:not(.eyebrow) {
+.contact-copy > p {
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
@@ -648,7 +670,8 @@ footer a {
   }
 
   .photo > img,
-  .button {
+  .button,
+  .lightbox-nav {
     transition: none;
   }
 }
